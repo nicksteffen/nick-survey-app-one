@@ -1,0 +1,10 @@
+htmlq:
+	function submitViaPost()
+		returns an http.post with args(config['submitUrl'], $.param(makeParamsObject())
+			
+	http.post is post(url,data,[config]);
+		url: destination of request
+		data: request content
+		config: (optional)an object with configuration
+	might be able to completely hijack this and send our own data (as json?)
+
